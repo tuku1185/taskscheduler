@@ -1,0 +1,261 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MyTaskDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MyTaskDemo.ico"
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MyTaskDemo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MyTaskDemo Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MYTASKDEMO_DIALOG DIALOGEX 0, 0, 470, 248
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MyTaskDemo"
+FONT 8, "Arial"
+BEGIN
+    LTEXT           "Program to run\n(required):",IDC_STATIC,75,22,
+                    46,28
+    RTEXT           "Program parameters:",IDC_STATIC,24,55,95,12
+    RTEXT           "Execution path:",IDC_STATIC,30,75,89,
+                    19
+    LTEXT           "Comments:",IDC_STATIC,82,102,38,8
+    EDITTEXT        IDC_PROGRAM,123,26,176,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PARAMETERS,123,50,178,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PATH,123,74,177,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMENT,123,100,176,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE_PROGRAM,303,26,42,14
+    PUSHBUTTON      "Browse...",IDC_BROWSE_PATH,304,74,41,14
+    DEFPUSHBUTTON   "Add task",IDC_ADD_TASK,373,151,50,14
+    PUSHBUTTON      "Remove task",IDC_DELETE_TASK,373,175,49,14
+    PUSHBUTTON      "Exit",IDCANCEL,368,199,64,14
+    GROUPBOX        "Actions",IDC_STATIC,359,131,80,93
+    GROUPBOX        "Execution frequency",IDC_STATIC,357,15,103,110
+    CONTROL         "once",IDC_ONCE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,373,34,25,10
+    CONTROL         "every day",IDC_DAILY,"Button",BS_AUTORADIOBUTTON,373,
+                    57,50,10
+    CONTROL         "every week",IDC_WEEKLY,"Button",BS_AUTORADIOBUTTON,373,
+                    80,48,10
+    CONTROL         "every month",IDC_MONTHLY,"Button",BS_AUTORADIOBUTTON,373,
+                    103,49,10
+    LTEXT           "Start date:",IDC_STATIC,38,146,50,8
+    LTEXT           "End date:",IDC_STATIC,243,146,40,8
+    LTEXT           "Start time:",IDC_STATIC,127,146,60,8
+    GROUPBOX        "Start and end of executed task",IDC_STATIC,15,
+                    132,337,53
+    LTEXT           "User name\n(required):",IDC_STATIC,25,191,48,26
+    LTEXT           "Password\n(required):",IDC_STATIC,191,192,39,18
+    EDITTEXT        IDC_USERNAME,77,195,110,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,233,194,118,14,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "Task name\n(required):",IDC_STATIC,12,219,57,24
+    EDITTEXT        IDC_TASKNAME,78,221,110,14,ES_AUTOHSCROLL
+    CONTROL         "Modify if given task exists",
+                    IDC_REPLACETASK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    191,223,162,10
+    CONTROL         "DateTimePicker1",IDC_STARTDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_GROUP | WS_TABSTOP,23,163,89,15
+    CONTROL         "DateTimePicker2",IDC_STARTTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,122,162,
+                    86,15
+    CONTROL         "DateTimePicker3",IDC_ENDDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,227,162,89,15
+    GROUPBOX        "Options",IDC_STATIC,17,15,337,109
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MyTaskDemo MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MyTaskDemo\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MyTaskDemo.EXE\0"
+            VALUE "ProductName", "MyTaskDemo Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MYTASKDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 460
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About MyTaskDemo..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MyTaskDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
